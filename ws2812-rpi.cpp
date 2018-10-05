@@ -246,7 +246,7 @@ void* NeoPixel::map_peripheral(uint32_t base, uint32_t len){
 }
 
 void NeoPixel::clearPWMBuffer(){
-    memset(PWMWaveform, 0, NUM_DATA_WORDS * 4);
+    std::cout << memset(PWMWaveform, 0, NUM_DATA_WORDS * 4); << std::endl;
 }
 
 void NeoPixel::clearLEDBuffer(){
@@ -300,11 +300,9 @@ void NeoPixel::initHardware(){
     char pagemap_fn[64];
 
     // Clear the PWM buffer
-    std::cout << "clear PWM Buffer" << std::endl;
     clearPWMBuffer();
 
     // Set up peripheral access
-    std::cout << "set up peripheral access" << std::endl;
     dma_reg = (unsigned int*) map_peripheral(DMA_BASE, DMA_LEN);
     dma_reg += 0x000;
     pwm_reg = (unsigned int*)map_peripheral(PWM_BASE, PWM_LEN);
@@ -313,7 +311,6 @@ void NeoPixel::initHardware(){
 
 
     // Set PWM alternate function for GPIO1
-    std::cout << "Set PWM alternate to GPIO1" << std::endl;
     SET_GPIO_ALT(1, 5);
 
     // Allocate memory for the DMA control block & data to be sent
