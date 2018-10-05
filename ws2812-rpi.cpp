@@ -297,6 +297,7 @@ void NeoPixel::initHardware(){
     int i = 0;
     int pid;
     int fd;
+    initialized = false;
     char pagemap_fn[64];
 
     // Clear the PWM buffer
