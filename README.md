@@ -8,7 +8,7 @@ Before using WS2812 LED's with this or any other solution you should definitely 
 
 <h2>Hardware</h2>
 
-I do not recommend powering any LED's directly from the Raspberry Pi as they can be quite power hungry. Also, I prefer to power them from a 5V source rather than 3.3V which requires a level converter (74AHCT125 or equivalent). A big capacitor (1000uF, 6.3V) across the supply rails is a good idea irrespective of what voltage you are using. Data is output from the Raspberry Pi on GPIO1 (physical pin 7) and a current limiting resistor (300-500 ohms) should be placed between this and the first LED.
+I do not recommend powering any LED's directly from the Raspberry Pi as they can be quite power hungry. Also, I prefer to power them from a 5V source rather than 3.3V which requires a level converter (74AHCT125 or equivalent). A big capacitor (1000uF, 6.3V) across the supply rails is a good idea irrespective of what voltage you are using. Data is output from the Raspberry Pi on GPIO18 (physical pin 12) and a current limiting resistor (300-500 ohms) should be placed between this and the first LED.
 
 <h2>Software</h2>
 <h3>C++</h3>

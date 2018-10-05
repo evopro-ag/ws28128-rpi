@@ -311,8 +311,8 @@ void NeoPixel::initHardware(){
     gpio_reg = (unsigned int*)map_peripheral(GPIO_BASE, GPIO_LEN);
 
 
-    // Set PWM alternate function for GPIO1
-    SET_GPIO_ALT(1, 5);
+    // Set PWM alternate function for GPIO18
+    SET_GPIO_ALT(18, 5);
 
     // Allocate memory for the DMA control block & data to be sent
     virtbase = (uint8_t*) mmap(
