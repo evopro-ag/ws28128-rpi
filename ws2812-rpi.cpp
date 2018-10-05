@@ -454,6 +454,7 @@ void NeoPixel::initHardware(){
 
     dma_reg[DMA_DEBUG] = 7;
     usleep(100);
+    initialized = true;
 }
 
 void NeoPixel::startTransfer(){

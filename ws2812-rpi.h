@@ -64,6 +64,7 @@ public:
     unsigned char setPixelColor(unsigned int n, unsigned char r, unsigned char g, unsigned char b);
     unsigned char setPixelColor(unsigned int n, Color_t c);
     bool setBrightness(float b);
+    bool initialized = false;
 
     //Color_t* getPixels();
     std::vector<Color_t> getPixels();
