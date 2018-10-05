@@ -312,7 +312,7 @@ void NeoPixel::initHardware(){
 
 
     // Set PWM alternate function for GPIO18
-    SET_GPIO_ALT(18, 5);
+    SET_GPIO_ALT(194, 5);
 
     // Allocate memory for the DMA control block & data to be sent
     virtbase = (uint8_t*) mmap(
