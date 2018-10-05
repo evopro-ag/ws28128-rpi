@@ -29,7 +29,7 @@
 int main(int argc, char **argv){
 	std::cout << "initialize NeoPixel" << std::endl;
     NeoPixel *n=new NeoPixel(24);
-    std::cout << "start demo" << std::endl;
+    std::cout << "initialized: " << n->initialized << std::endl;
     while(true) n->effectsDemo();
     delete n;
 
