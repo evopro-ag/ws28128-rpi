@@ -42,6 +42,7 @@
 #include <math.h>
 #include <time.h>
 #include <signal.h>
+#include <iostream>
 
 #include <vector>
 #include "ws2812-rpi-defines.h"
