@@ -25,9 +25,11 @@
 
 #include "ws2812-rpi.h"
 
-int main(int argc, char **argv){
-    NeoPixel *n=new NeoPixel(24);
 
+int main(int argc, char **argv){
+	std::cout << "initialize NeoPixel" << std::endl;
+    NeoPixel *n=new NeoPixel(24);
+    std::cout << "start demo" << std::endl;
     while(true) n->effectsDemo();
     delete n;
 
