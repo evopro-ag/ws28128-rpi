@@ -246,7 +246,7 @@ void* NeoPixel::map_peripheral(uint32_t base, uint32_t len){
 }
 
 void NeoPixel::clearPWMBuffer(){
-    std::cout << memset(PWMWaveform, 0, NUM_DATA_WORDS * 4); << std::endl;
+    memset(PWMWaveform, 0, NUM_DATA_WORDS * 4);
 }
 
 void NeoPixel::clearLEDBuffer(){
